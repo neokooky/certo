@@ -1,0 +1,268 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    color: rgba(2, 3, 59, 1);
+    background-color: rgba(243, 248, 255, 1);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    margin: 0;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.7200000286102295px;
+    width: 609px;
+}
+
+.main-header {
+    padding: 24px 120px;
+    display: flex;
+    background-color: rgba(243, 248, 255, 1);
+    font-weight: 800;
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between; /* не работает свойство */
+}
+
+.header-logo {
+    margin-right: auto;  /* не работает свойство */
+}
+    
+.header-navigation-list {
+    width: 492px;
+    list-style: none;
+    margin: 0;
+    padding: 14px 0;
+    display: flex;
+    gap: 48px;
+}
+
+.header-navigation-list img {
+    padding-bottom: 3px;
+}
+
+.header-navigation-list a {
+    color: rgba(2, 3, 59, 1);
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 25px;
+    text-align: left;
+}
+
+.header-navigation-item:last-child a::after {
+    content: url("img/a_after.png"); /* не подключается */
+}
+
+.sign-in a {
+    color: rgba(255, 255, 255, 1);
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 18px;
+    text-align: left;
+}
+
+.sign-in {
+    width: 92px;
+    height: 50px;
+    background: rgba(67, 53, 222, 1);
+    border: none;
+    border-radius: 42px;
+    margin-left: 48px;
+}
+
+
+/*        ОСНОВНОЙ БЛОК          */
+
+
+.description {
+    background-image: url("../img/Ellipse.png"); 
+    background-repeat: no-repeat;
+    padding: 123px 177px;
+    display: flex;
+}
+
+.description-block {
+    width: 633px;
+}
+
+.description-block h1 {
+    margin: 0;
+    margin-bottom: 48px;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 75px;
+    letter-spacing: -1.2000000476837158px;
+}
+
+.description-block p {
+    margin-bottom: 96px;
+}
+
+.description-image {
+    width: 741px;
+    height: 741px;
+    background-color: rgba(67, 53, 222, 1);
+    background-image: url("../img/home-header-2.jpg");
+    background-repeat: no-repeat;
+    background-position: 21px 25px;
+}
+
+.description-image img {
+    margin-left: 55px;
+    margin-top: 54px;
+}
+
+.buttons-download {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.button-download { 
+    padding: 16px 20px;
+    height: 54px;
+    border: 1px solid black;
+    border-radius: 42px;
+    margin-bottom: 24px;
+}
+
+.button-download a {
+    color: rgba(2, 3, 59, 1);
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 22.5px;
+}
+
+.button-download a::after {
+    content: "";
+    background-image: url("../img/button-arrow.svg.png");     /* не подключается */    
+}
+
+.button-download-1 {
+    background-color: rgba(255, 194, 71, 1);
+    border: none;
+}
+
+
+/*       КОММЕНТАРИИ       */
+
+
+.comments {
+    background-image: linear-gradient(180deg, #F7C95F 0%, #FDB235 100%);
+    position: relative;
+    top: -250px;    /* реализовано явно неверно, приходится каждому последующему блоку задавать смещение */
+    padding: 83px 96px;
+}
+
+.cards-comments {
+    margin-bottom: 72px;
+    padding: 0 auto;
+
+}
+
+.rate-stars {
+    margin-bottom: 24px;
+}
+
+.cards-comments ul {
+    display: flex;
+    gap: 24px;
+    padding: 0 auto;
+}
+
+.cards-comments p::before {
+    content: "";
+    background-image: url("..img/star.svg"); /* не подключается */
+}
+
+.cards-comments p {
+    margin-bottom: 24px;
+}
+
+.cards-comments li {
+    width: 400px;
+    padding: 36px;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 48px;
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 20px;
+    box-shadow: 12px 12px 20px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+.cards-comments h3 {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.comments-featured {
+    width: 1248px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comments-featured ul {
+    display: flex;
+    gap: 36px;
+}
+
+
+
+/*      БЕЗОПАСНОСТЬ      */
+
+
+.security {
+    display: flex;
+    padding: 84px 132px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 1);
+    position: relative;
+    top: -250px;
+}
+
+.security-description {
+    width: 588px;
+}
+
+.security-description h2 {
+    margin-bottom: 43px;
+}
+
+
+/*    ФУНКЦИИ    */
+
+
+.functions {
+    padding: 83px 300px;
+    text-align: center;
+}
+
+.functions h3 {
+    margin: 0 50px 73px;
+}
+
+.functions-wrapper {
+    width: 840px;
+    box-shadow: 12px 12px 20px 0px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 1);
+    padding: 72px;
+}
+
+
